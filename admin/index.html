@@ -1,0 +1,1255 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="End-user guide for the Atrium eLab - desktops, data import/export, and everyday use.">
+      
+      
+      
+        <link rel="canonical" href="https://docs.elab-accel.atrem.org/admin/">
+      
+      
+        <link rel="prev" href="../reviewing/">
+      
+      
+        <link rel="next" href="../publishing/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Administering the eLab - Atrium eLab — User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#administering-the-elab" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Atrium eLab — User Guide" class="md-header__button md-logo" aria-label="Atrium eLab — User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm7-6 1.34-1.34L16.27 18H7.73l2.66-4.61zm-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Atrium eLab — User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Administering the eLab
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Atrium eLab — User Guide" class="md-nav__button md-logo" aria-label="Atrium eLab — User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.21-.07-.41-.18-.57L13 8.35V4h-2v4.35L5.18 18.43c-.11.16-.18.36-.18.57m1 3a3 3 0 0 1-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 0 1-1-1V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 0 1-3 3zm7-6 1.34-1.34L16.27 18H7.73l2.66-4.61zm-.5-4a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5"/></svg>
+
+    </a>
+    Atrium eLab — User Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everyone
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Everyone
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../desktops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using Your Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools on the Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../packages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installing Packages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the eLab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By role
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By role
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../airlock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing & Exporting Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reviewing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reviewing Transfer Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administering the eLab
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administering the eLab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warming-capacity-for-a-scheduled-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warming capacity for a scheduled session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduling-desktops-for-a-taught-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scheduling desktops for a taught session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#giving-users-more-credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giving users more credits
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-the-elab-has-more-than-one-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the eLab has more than one site
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-capacity-before-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking capacity before a session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-desktop-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing desktop images
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Budgets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#helping-a-user-with-their-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Helping a user with their desktop
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publishing Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choosing-your-image/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing Your Own Image
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warming-capacity-for-a-scheduled-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warming capacity for a scheduled session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduling-desktops-for-a-taught-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scheduling desktops for a taught session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#giving-users-more-credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Giving users more credits
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-the-elab-has-more-than-one-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When the eLab has more than one site
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checking-capacity-before-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking capacity before a session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-desktop-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing desktop images
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Budgets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#helping-a-user-with-their-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Helping a user with their desktop
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="administering-the-elab">Administering the eLab<a class="headerlink" href="#administering-the-elab" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">For members of <code>elab-admins</code></p>
+<p>This guide is for eLab administrators, who manage desktop capacity, sessions, credits and the
+budget from the portal's admin page. If you need this and don't hold the role, ask your platform
+operator to add you; it takes effect the next time you sign in.</p>
+</div>
+<p>Two things this role does not include. <strong>Account administration</strong> — creating users, granting
+roles, issuing temporary passwords, resetting a lost authenticator — is done by your platform
+operator; what users experience is described in the platform's Account Help. And <strong>publishing
+content</strong> and <strong>choosing your own desktop image</strong> are separate roles with their own guides
+(<a href="../publishing/">Publishing Content</a>, <a href="../choosing-your-image/">Choosing Your Own Image</a>):
+being an administrator does not imply either, because one is custodianship of everyone's content
+and the other a personal preference, and neither is running the eLab.</p>
+<p>The admin page is arranged in four tabs by concern: <strong>Capacity</strong> (the desktop pools, warm slots,
+image choice and the streaming tier), <strong>Sessions</strong> (who is running now, scheduled starts and
+their results), <strong>Users</strong> (per-person controls such as credits) and <strong>Budget</strong> (spend, the
+budget and the project end date). The headline numbers sit above the tabs, as does the warning
+about nodes Azure refuses to add, so both stay visible whichever tab you are on. The page updates
+itself every few seconds, and the tab you are on is part of the address, so a link such as
+<code>…/admin#budget</code> opens straight to that tab.</p>
+<h2 id="warming-capacity-for-a-scheduled-session">Warming capacity for a scheduled session<a class="headerlink" href="#warming-capacity-for-a-scheduled-session" title="Permanent link">&para;</a></h2>
+<p>Desktops normally provision on demand: a CPU desktop in a couple of minutes, a GPU desktop
+in around ten from cold. For a scheduled session with many participants, warm capacity in
+advance from the <strong>Capacity</strong> tab.</p>
+<p>One slot is one desktop's worth of capacity, held ready with the image already downloaded, so a
+user starting into a warm slot gets a desktop almost immediately. Each desktop type (CPU and GPU)
+has two controls.</p>
+<ul>
+<li><strong>Reserve</strong> — <em>N desktops from a start to an end</em>. Book one per session: for a class or workshop
+  of 30 starting at 09:00, 30 CPU desktops from 08:40 to 12:00. Start it about 20 minutes early
+  for CPU and 30 for GPU, because machines have to join and download the desktop image before a
+  slot counts as ready. Until the end time the reservation holds 30 desktops' worth of capacity whether people
+  are running desktops or not, so someone who stops at lunch and starts again in the afternoon
+  still lands on a warm machine. It ends by itself, and stays in the list marked <em>Ended</em> for a
+  day so you can see what a session that has just finished was given. Reservations that overlap
+  add up.</li>
+<li><strong>Always keep spare</strong> — the buffer: that many warm slots beside whatever is running, around the
+  clock, for people arriving through the day. A reservation and the buffer overlap rather than add
+  up: with 30 reserved and a buffer of 5, 30 slots are held until more than 25 people are running
+  desktops, and then 5 spare beside them.</li>
+</ul>
+<p>Warm slots never take capacity a user needs: a desktop always takes precedence over one, and no
+more are held than the room left in the eLab's declared capacity. When a reservation would fill
+the eLab so that the buffer no longer fits, the page warns you as you book it, and while it is
+happening the buffer shows how many spare slots are really held, for example <em>Buffer: 10 (3 held
+— pool nearly full)</em>.</p>
+<p>Warm capacity <strong>bills while it is held</strong>, whether or not anyone connects. The page shows what the
+buffer costs a day and each reservation's total cost, at the deployment's own cost per
+desktop-hour. Slots people use are charged to their credits as usual, so what a reservation adds
+is the part nobody uses. GPU capacity is both scarcer and more expensive than CPU. Times are
+read in your own local time, including across a change of the clocks.</p>
+<h2 id="scheduling-desktops-for-a-taught-session">Scheduling desktops for a taught session<a class="headerlink" href="#scheduling-desktops-for-a-taught-session" title="Permanent link">&para;</a></h2>
+<p>Users can book their own desktop to start at a given time from their dashboard. From the
+<strong>Sessions</strong> tab you can also book on someone's behalf — for a single user, or for everyone at once ahead
+of a face-to-face session, so the room is ready when people sit down.</p>
+<p>Pick the user (or <strong>All users</strong>), the desktop type and the time, which is read in your own local
+time. Booking for everyone replaces any existing bookings those users had made, and the
+confirmation tells you how many were replaced. Each person is notified on their dashboard.</p>
+<p>Two things to keep in mind:</p>
+<ul>
+<li><strong>Credits are drawn from the scheduled time</strong>, whether or not anyone connects. Booking a
+  group an hour early costs every participant an hour's credits.</li>
+<li><strong>Only users who have signed in at least once can be scheduled.</strong> The platform learns of someone
+  at their first login, so "All users" covers the people it knows about — the count is shown next
+  to the option, and it is worth checking that against the number you expect before relying on
+  it.</li>
+</ul>
+<p>Schedule warm capacity for the same time (see above). A booking on its own still starts the
+desktops cold, so a large block would arrive several minutes late.</p>
+<p>The upcoming list shows every booking with the user, type and time, flagging anyone who already
+has a desktop running. Individual bookings can be cancelled from that list, or all of them at
+once.</p>
+<p>Once a booking fires it is consumed and disappears from the list, so the <strong>recent scheduled-start
+results</strong> panel is where you confirm a session actually started. It keeps twelve hours of outcomes
+and distinguishes desktops that started, ones skipped because a session was already running, and
+ones that failed — most often because the user had no credits left. That is the panel to
+check a few minutes after a scheduled start rather than waiting for people to report problems.</p>
+<h2 id="giving-users-more-credits">Giving users more credits<a class="headerlink" href="#giving-users-more-credits" title="Permanent link">&para;</a></h2>
+<p>Every user starts with the same balance of <strong>credits</strong>, set when the eLab was deployed, and the
+dashboard shows them what they have left and what it buys. A credit is a penny: every desktop
+draws credits at its own rate per hour, shown next to its launch button, so a GPU desktop uses
+its balance faster than a CPU desktop, and the portal warns the user and asks them to confirm
+before it starts.
+When someone runs short before a deadline, or a whole group needs more time than planned,
+add credits from the <strong>Credits</strong> panel on the <strong>Users</strong> tab: pick the user (or <strong>All users</strong>),
+enter the number of credits, then <strong>Apply</strong>.</p>
+<p>The number is <em>added</em> to what the user has now, so adding 500 to someone with 300 left gives them
+800. It takes effect immediately: a desktop that is already running keeps drawing against the
+new figure, and the user sees a note on their dashboard saying what changed. A negative number
+takes credits back, but only credits the user still has, so nothing already spent is ever
+reclaimed and nobody goes below zero. As with scheduling, only users who have signed in at least
+once are listed. On an eLab that spans several sites, credits are one balance per user wherever
+their desktop runs, so a top-up follows them.</p>
+<p>Two things to keep in mind:</p>
+<ul>
+<li><strong>Credits are money.</strong> The budget reconciliation assumes every allocated credit may be spent,
+  so a large top-up for everyone brings forward the point at which the budget throttles everyone.
+  Add what the session needs rather than a generous round number.</li>
+<li><strong>The budget throttle still applies.</strong> If the project is overspending, remaining credits are
+  scaled down for everyone regardless of top-ups. Raise the budget first if that is the actual
+  constraint (see <a href="#budgets">Budgets</a>).</li>
+</ul>
+<h2 id="when-the-elab-has-more-than-one-site">When the eLab has more than one site<a class="headerlink" href="#when-the-elab-has-more-than-one-site" title="Permanent link">&para;</a></h2>
+<p>Some eLabs run desktops at more than one site behind one portal. The Capacity tab then shows a
+block per site, the portal's own site first, each with its own desktop pools, warm slots, image
+choice and streaming tier, and every control names the site it applies to. Warm the site where
+the session will actually run: a user's desktops always start on the site they are placed on,
+which the eLab team sets by cohort group, so warming the wrong site prepares capacity nobody will
+use.</p>
+<p>The Sessions tab lists desktops from every site with a <em>Site</em> column, and stopping one goes to
+the right site. Scheduled starts, credits and the budget are the same wherever a user is placed:
+a booking fires on the user's own site, and the budget is one figure for the whole eLab, with
+each site's spend added in before the daily reconciliation.</p>
+<p><strong>Moving a user to another site.</strong> Each user is placed on a site by their cohort group (the
+platform's name for a placement group, unrelated to a study cohort), and a user in no cohort group
+is placed on the site of the portal itself. From the <strong>Placement</strong> panel
+on the Users tab you can move a user to any site: pick the user and the site, and their next
+launch starts there. Their files are transferred to the new site straight away, so that first
+launch is not held up; if the site cannot be reached at that moment, the transfer happens at the
+first launch instead, and the dashboard tells the user it is running. A transfer keeps the newer
+copy of each file, whichever site it was edited on, so work done on either side survives a move in
+both directions. A file deleted on one site returns from the other rather than being removed, so
+tidy a home after a move rather than before. A move is refused while the
+user has a desktop running or starting anywhere, because the transfer would write into a home
+that is in use: stop the desktop from the Sessions tab first. The panel lists everyone who has
+been moved, with their cohort's site beside the one they are on, and <strong>Return to cohort site</strong>
+puts them back; moving someone to their cohort's site does the same. Roles are unaffected by a
+move, and so are credits and bookings.</p>
+<p><strong>A move relocates data — treat it as a decision, not a convenience.</strong> The sites of one eLab may
+sit in different regions or countries, and a move copies the user's whole home directory to the
+new one. That includes anything they have copied out of their approved imports, which they are
+free to do: imports are read-only, but reading them is the point, and nothing in the portal can
+prevent a copy into their own home. So the moment of moving someone is where the decision actually
+gets made. Before moving people between sites, satisfy yourself that the project's data agreement
+allows their data to sit at the destination, and consider whether any export controls apply. If in
+doubt, ask your data governance officer before moving rather than after.</p>
+<p>What a move does <strong>not</strong> carry is <code>/imports</code>: approved airlock imports live on a separate share,
+not in the home directory, so they stay at the site they were delivered to. The user keeps whatever
+they copied into their home, and can request the import again on the new site — there is one airlock
+for the whole eLab, so their request history moves with them even though the files do not.</p>
+<p>While a transfer is running the Placement panel names the user and the site their files are moving
+to, and the user cannot launch until it finishes. Most moves show nothing here at all: if the
+user's files are already on the destination, from an earlier session there, the move says so and
+transfers nothing. A transfer that fails is flagged in the same place, in amber. Their desktop will
+not start on that site until it succeeds, so move them again to retry.</p>
+<p>A site that cannot be reached is marked <strong>unreachable</strong> on the Capacity tab and its sessions are
+not listed. Desktops already running there carry on. Nothing on that site can be changed from the
+portal until it is back, and its users see the same message on their dashboards.</p>
+<h2 id="checking-capacity-before-a-session">Checking capacity before a session<a class="headerlink" href="#checking-capacity-before-a-session" title="Permanent link">&para;</a></h2>
+<p>On the <strong>Capacity</strong> tab, each desktop type shows how many nodes it is currently using out of the maximum it is
+allowed to grow to. When a pool reads <strong>at ceiling</strong>, desktops that will not start are
+hitting a configured limit rather than waiting for capacity to arrive, and no amount of
+waiting will clear them — that needs a configuration change, so raise it with the platform
+team ahead of the session rather than during it.</p>
+<p>A different failure looks identical from the outside: the pool is still below its ceiling, but
+Azure will not create the nodes. When that happens a banner reads <strong>Azure is refusing to add
+nodes</strong>, naming the pool and the reason. Take it at face value — desktops and warm slots beyond
+what the running nodes already hold will wait indefinitely rather than start, and capacity showing
+as <em>provisioning</em> for that pool is not on its way.</p>
+<p>The two reasons differ in what you can do about them:</p>
+<ul>
+<li><strong>Quota used up</strong> — the subscription is allowed no more vCPUs of that VM size. Only a quota
+  increase clears it, which the platform team must request from Azure and which is not granted
+  immediately. Plan the session around the capacity you already have.</li>
+<li><strong>No regional capacity</strong> — Azure has none of that VM size free at the moment. This usually clears
+  on its own, and where a pool with a different VM size is configured the platform will try that
+  one instead.</li>
+</ul>
+<p>Without this banner neither is visible: a refused scale-up and a merely slow one both leave warm
+slots reading <em>provisioning</em>.</p>
+<p>Users see a matching, plainer version of this on their own dashboard: a desktop with no machine
+available reads <strong>Waiting for capacity</strong> rather than a permanent <em>Starting…</em>, and after about half
+an hour the platform stops waiting, removes it and tells them why. No hours are charged for a
+desktop that never ran. Expect people whose desktops were removed this way to ask you when capacity
+will be back — the banner above is where you find out.</p>
+<p>The <strong>streaming tier</strong> panel reports the components that carry desktop screens to the
+browser, as ready-out-of-expected counts. These are sized in advance rather than grown on
+demand, so anything short of the expected number means the platform is running with less
+streaming capacity than intended. It will not be obvious to users until a session is busy,
+at which point connections start failing — so check this reads fully ready before a large
+session, and report a shortfall rather than working around it.</p>
+<h2 id="choosing-desktop-images">Choosing desktop images<a class="headerlink" href="#choosing-desktop-images" title="Permanent link">&para;</a></h2>
+<p>Where more than one desktop image is offered for a pool (for example a full and a lite CPU
+image, or PyTorch and TensorFlow GPU images), the <strong>Capacity</strong> tab selects which image new
+launches use. Pick the image before warming capacity — warmed sessions are prepared with
+the selected image. Running desktops keep the image they started with.</p>
+<p><strong>Letting someone choose their own.</strong> A member of <code>elab-image-managers</code> can override the pool's
+image for their <em>own</em> desktops only — useful for someone leading a group who wants the full
+workstation while the group runs on the lite image, or for testing a new image before switching
+everyone to it.
+Nothing you set here changes for anyone else. <a href="../choosing-your-image/">Choosing Your Own Image</a> is
+their guide, and worth sending them: it covers why their desktop starts more slowly than everyone
+else's.</p>
+<p>What each image carries is described for users in <a href="../tools/">Tools on the Desktop</a>. In short:
+the <strong>full</strong> CPU image is a complete workstation (JupyterLab, VS Code, RStudio and R, conda,
+LibreOffice); the <strong>lite</strong> image is Firefox, VS Code and plain Python with pip, at under half the
+size, which makes it the better choice for a taught session where people only need an editor and
+a browser; and each <strong>GPU</strong> image is the full image plus one framework, PyTorch or TensorFlow,
+never both.</p>
+<p><strong>Your eLab's own images.</strong> The list is not limited to the images the platform ships. An eLab can
+declare its own — a discipline's toolchain on top of the standard desktop, say — and they appear in
+the same picker under whatever name your operator gave them, with no change to the platform itself.
+Ask your operator what an image carries before selecting it for a pool: only they can tell you, and
+users will read the list as though the platform vouched for it.</p>
+<h2 id="budgets">Budgets<a class="headerlink" href="#budgets" title="Permanent link">&para;</a></h2>
+<p>Desktop time draws down the project budget automatically through credits; users see their
+remaining credits in the portal, and new desktops stop launching when the budget is exhausted.</p>
+<p>The budget itself starts from the value your operator set when the eLab was deployed, and the
+<strong>Budget</strong> tab shows the figure in force. You can <strong>override</strong> it there: enter a new total (ex-VAT)
+and choose <strong>Set</strong>. The change does not take effect instantly — the platform reconciles spend
+against the budget on a schedule, and the page marks the new figure <em>applies at next
+recalculation</em> until that has run. Choose <strong>Recalculate now</strong> to bring it forward; spend and the
+users' hour allowances refresh within a minute or two.</p>
+<p>The <strong>fixed monthly cost</strong> is the standing bill for the infrastructure itself — the cluster's base
+nodes, storage, gateway — and it is reserved out of the total before any of it pays for desktop
+hours. Setting it here works like the budget: enter the monthly figure and choose <strong>Set</strong>, and it
+applies at the next recalculation. Raise it and there is less left for desktops, so everyone's hour
+allowance falls; lower it and more becomes available. The page refuses a figure that would consume
+the whole budget over the project's length, since that would leave no hours for anyone at all.</p>
+<p>The <strong>project end date</strong> sits below and works the same way: the budget is paced from
+the project start to this date, so extending a project that overruns, or shortening one that ends
+early, changes how fast the remaining budget may be spent. Set the new date and it applies at the
+next recalculation. The start date cannot be changed, because spend is measured from it. The page
+refuses a date in the past or one before the project start.</p>
+<p>An override entered here wins over the deployed value, and stays in force until you change it
+again. Because it changes how many credits everyone is allowed, treat it as a deliberate decision
+rather than a quick fix for a group that has run out — and tell your operator, so the deployed
+value can be brought into line.</p>
+<p>Where the platform cannot read actual spend (the page says so, and names the reason), the
+budget is still the figure hours are scaled against; only the spend-based throttling is paused.</p>
+<p><strong>Cost per desktop-hour.</strong> Lower on the same tab is what an hour of each desktop class costs, in
+credits, which is what a running desktop draws down. It starts from the figure your operator
+deployed and can be set here; the deployed number stays shown beside it whenever the two differ,
+and <strong>Use deployed</strong> puts it back. Changing it applies to desktops started from then on, so a
+running desktop keeps the rate it started at, and everyone's hours-remaining figure moves as soon
+as you set it even though no credits change hands. Where an eLab spans several sites the drain is
+decided centrally, so this one figure covers desktops wherever they run: if the sites differ in
+price, use an average weighted by the desktop slots each one declares, and prefer to round up,
+since a rate set too low shows up later as everyone's allowance being cut part-way through.</p>
+<p>On an eLab that spans several sites there is one budget for the whole eLab, managed on this
+page; each site's own spend is included in the reconciliation.</p>
+<h2 id="helping-a-user-with-their-desktop">Helping a user with their desktop<a class="headerlink" href="#helping-a-user-with-their-desktop" title="Permanent link">&para;</a></h2>
+<p>Administrators <strong>cannot</strong> attach to a user's desktop session. There is no such control on the
+admin page, and this is deliberate: a desktop may show confidential data, and silent access to
+it — even by an administrator — is not something the platform offers.</p>
+<p>When someone needs help with what is on their screen, ask them to share it with you. From their
+own portal page they choose <strong>Share my screen (view only)</strong> and send you the link. You will need
+to sign in to the portal to open it, you will be able to see but not control their desktop, and
+the platform records that you viewed it. The link works once and expires after ten minutes, so
+ask for a fresh one rather than keeping an old link.</p>
+<p>The one desktop control administrators do have is stopping a session, which is visible to the
+user because their desktop disappears. Use it to recover a stuck or abandoned session, not as a
+way to interrupt someone — and tell them you have done it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../reviewing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Reviewing Transfer Requests">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Reviewing Transfer Requests
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../publishing/" class="md-footer__link md-footer__link--next" aria-label="Next: Publishing Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Publishing Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
